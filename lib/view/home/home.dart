@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:webapp/view/widget/appbar/app_bar_widget.dart';
-import 'package:webapp/view/widget/button.dart';
-import 'package:webapp/view/widget/center_view.dart';
-import 'package:webapp/view/widget/course_de.dart';
+import 'package:webapp/view/home/widget/appbar/app_bar_widget.dart';
+import 'package:webapp/view/home/widget/button.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -11,7 +9,8 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.white,
-      body: CenteredView(
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
         child: Column(
           children: [
             AppBarWidget(),
