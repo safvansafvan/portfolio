@@ -1,39 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:webapp/controller/const/const.dart';
+import 'package:webapp/view/widget/appbar/app_bar_widget.dart';
+import 'package:webapp/view/widget/button.dart';
+import 'package:webapp/view/widget/center_view.dart';
+import 'package:webapp/view/widget/course_de.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: PreferredSize(
-          preferredSize: const Size(double.infinity, 80),
-          child: SafeArea(
-            child: AppBar(
-              backgroundColor: Colors.grey.withAlpha(300),
-              leading: Image.asset('assets/logo.png'),
-              title: const Text('Portfolio'),
-              centerTitle: false,
-              actions: [
-                TextButton(
-                    onPressed: () {},
-                    child: Text('Home', style: appBarTitleStyle)),
-                TextButton(
-                    onPressed: () {},
-                    child: Text('Resume', style: appBarTitleStyle)),
-                TextButton(
-                    onPressed: () {},
-                    child: Text('About', style: appBarTitleStyle)),
-                TextButton(
-                    onPressed: () {},
-                    child: Text('Contact', style: appBarTitleStyle))
-              ],
-            ),
-          ),
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: CenteredView(
+        child: Column(
+          children: [
+            AppBarWidget(),
+            Expanded(
+              child: Row(
+                children: <Widget>[
+                  // CourseDetails(),
+                  Expanded(
+                    child: Center(
+                      child: CallToAction(title: 'Join Course'),
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
         ),
-        body: ListView(
-          children: [],
-        ));
+      ),
+    );
   }
 }
