@@ -9,22 +9,15 @@ class AppBarMobile extends StatelessWidget {
       preferredSize: const Size(double.infinity, 80),
       child: SafeArea(
         child: AppBar(
-          leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
+          leading: IconButton(
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              icon: const Icon(Icons.menu)),
           title: const Text('Portfolio'),
           centerTitle: false,
           actions: [
             Image.asset('assets/logo.png'),
-            // TextButton(
-            // onPressed: () {}, child: Text('Home', style: appBarTitleStyle)),
-            // TextButton(
-            // onPressed: () {},
-            // child: Text('Resume', style: appBarTitleStyle)),
-            // TextButton(
-            // onPressed: () {},
-            // child: Text('About', style: appBarTitleStyle)),
-            // TextButton(
-            // onPressed: () {},
-            // child: Text('Contact', style: appBarTitleStyle)),
           ],
         ),
       ),

@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 class CourseDetails extends StatelessWidget {
@@ -5,26 +6,39 @@ class CourseDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
+    return SizedBox(
       width: 600,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text(
-            'FLUTTER WEB.\nTHE BASICS',
-            style: TextStyle(
-                fontWeight: FontWeight.w800, height: 0.9, fontSize: 80),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Hi there , Welcome to my space',
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
+              ),
+              Image.network('assets/gif/hand.gif', width: 50, height: 50)
+            ],
           ),
-          SizedBox(
-            height: 30,
+          const Text(
+            'I Am Muhammed Safvan Kp,',
+            style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
           ),
-          Text(
-              'In this course we will go over the basics of using Flutter Web for website development. Topics will include Responsive Layout, Deploying, Font Changes, Hover Functionality, Modals and more.',
-              style: TextStyle(
-                fontSize: 21,
-                height: 1.7,
-              ))
+          AnimatedTextKit(
+            animatedTexts: [
+              TypewriterAnimatedText(
+                'Flutter Developer',
+                textStyle: const TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w600,
+                ),
+                speed: const Duration(milliseconds: 100),
+              ),
+            ],
+            isRepeatingAnimation: true,
+            repeatForever: true,
+          ),
         ],
       ),
     );
