@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webapp/view/home/widget/appbar/app_bar_widget.dart';
-import 'package:webapp/view/home/widget/button.dart';
-import 'package:webapp/view/home/widget/course_de.dart';
+import 'package:webapp/view/home/widget/body/body.dart';
 import 'package:webapp/view/utils/home_top_buttons.dart';
 
 class HomeView extends StatelessWidget {
@@ -14,21 +13,7 @@ class HomeView extends StatelessWidget {
       body: const Padding(
         padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
         child: Column(
-          children: [
-            AppBarWidget(),
-            Expanded(
-              child: Row(
-                children: <Widget>[
-                  CourseDetails(),
-                  Expanded(
-                    child: Center(
-                      child: CallToAction(title: 'Join Course'),
-                    ),
-                  )
-                ],
-              ),
-            )
-          ],
+          children: [AppBarWidget(), Body()],
         ),
       ),
       drawer: Drawer(

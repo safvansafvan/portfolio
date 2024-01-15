@@ -10,7 +10,7 @@ class AppBarWeb extends StatelessWidget {
       preferredSize: const Size(double.infinity, 80),
       child: SafeArea(
         child: AppBar(
-            leading: Image.asset('assets/logo.png'),
+            leading: Image.asset('assets/logo/logo.png'),
             title: const Text('Portfolio'),
             centerTitle: false,
             actions: homeButtons),

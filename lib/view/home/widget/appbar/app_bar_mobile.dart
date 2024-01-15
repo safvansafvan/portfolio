@@ -17,7 +17,7 @@ class AppBarMobile extends StatelessWidget {
           title: const Text('Portfolio'),
           centerTitle: false,
           actions: [
-            Image.asset('assets/logo.png'),
+            Image.asset('assets/logo/logo.png'),
           ],
         ),
       ),
