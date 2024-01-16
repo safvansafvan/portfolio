@@ -19,7 +19,7 @@ class HomeView extends StatelessWidget {
       drawer: Drawer(
         width: 200,
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.only(top: 20.0, left: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: homeButtons,

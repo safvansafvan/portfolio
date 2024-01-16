@@ -20,7 +20,7 @@ class MyDetails extends StatelessWidget {
                 'Hi there , Welcome to my space',
                 style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
               ),
-              Image.network('assets/gif/hand.gif', width: 50, height: 50)
+              Image.asset('assets/gif/hand.gif', width: 50, height: 50)
             ],
           ),
           const Text(
@@ -30,7 +30,7 @@ class MyDetails extends StatelessWidget {
           AnimatedTextKit(
             animatedTexts: [
               TypewriterAnimatedText(
-                'F l u t t e r D e v e l o p e r',
+                'F l u t t e r  D e v e l o p e r',
                 textStyle: const TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.w500,
