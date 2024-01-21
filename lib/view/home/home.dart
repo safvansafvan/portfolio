@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webapp/view/home/widget/appbar/app_bar_widget.dart';
 import 'package:webapp/view/home/widget/body/body.dart';
+import 'package:webapp/view/home/widget/bottom_view/bottom_view.dart';
 import 'package:webapp/view/utils/home_top_buttons.dart';
 
 class HomeView extends StatelessWidget {
@@ -10,11 +11,15 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-        child: Column(
-          children: [AppBarWidget(), Body()],
-        ),
+      body: ListView(
+        children: const [
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
+            child: AppBarWidget(),
+          ),
+          Body(),
+          BottomView()
+        ],
       ),
       drawer: Drawer(
         width: 200,

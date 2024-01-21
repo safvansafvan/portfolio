@@ -8,11 +8,10 @@ class BodyMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      shrinkWrap: true,
-      children: const [
-        MyDetails(),
-        CenteredView(child: PictureView(height: 200, width: 200)),
+    return const Column(
+      children: [
+        CenteredView(child: MyDetails()),
+        CenteredView(child: PictureView(height: 300, width: 300)),
       ],
     );
   }
