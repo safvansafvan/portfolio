@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webapp/view/home/widget/center_view.dart';
 import 'widget/my_details.dart';
 import 'widget/picture_view.dart';
 
@@ -10,7 +11,7 @@ class BodyDesktop extends StatelessWidget {
     return const Expanded(
       child: Row(
         children: <Widget>[
-          MyDetails(),
+          CenteredView(child: MyDetails()),
           Expanded(
             child: Center(
               child: PictureView(height: 400, width: 400),

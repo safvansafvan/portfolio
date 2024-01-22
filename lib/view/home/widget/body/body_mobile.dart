@@ -12,7 +12,7 @@ class BodyMobile extends StatelessWidget {
       shrinkWrap: true,
       children: const [
         MyDetails(),
-        CenteredView(child: PictureView(height: 300, width: 300)),
+        CenteredView(child: PictureView(height: 200, width: 200)),
       ],
     );
   }
