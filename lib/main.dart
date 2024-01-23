@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.raleway().fontFamily,
         appBarTheme: const AppBarTheme(color: Colors.white),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
       debugShowCheckedModeBanner: false,
       home: const HomeView(),
