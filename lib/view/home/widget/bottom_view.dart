@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:webapp/view/home/widget/bottom_view/bottom_view_mobile.dart';
-import 'package:webapp/view/home/widget/bottom_view/bottom_view_web.dart';
+import 'package:webapp/view/widget/bottom_view/bottom_view_mobile.dart';
+import 'package:webapp/view/widget/bottom_view/bottom_view_web.dart';
 
 class BottomView extends StatelessWidget {
   const BottomView({super.key});

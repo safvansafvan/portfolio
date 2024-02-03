@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:webapp/view/home/widget/body/widget/picture_view.dart';
-import 'package:webapp/view/home/widget/center_view.dart';
+import 'package:webapp/view/widget/body/widget/picture_view.dart';
+import 'package:webapp/view/widget/center_view.dart';
 import 'widget/my_details.dart';
 
 class BodyMobile extends StatelessWidget {

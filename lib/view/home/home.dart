@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:webapp/view/home/widget/appbar/app_bar_widget.dart';
-import 'package:webapp/view/home/widget/body/body.dart';
-import 'package:webapp/view/home/widget/bottom_view/bottom_view.dart';
+import 'package:webapp/view/home/widget/app_bar_widget.dart';
+import 'package:webapp/view/home/widget/body.dart';
+import 'package:webapp/view/home/widget/bottom_view.dart';
 import 'package:webapp/view/utils/home_top_buttons.dart';
 
 class HomeView extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:webapp/view/home/widget/body/body_desktop.dart';
-import 'package:webapp/view/home/widget/body/body_mobile.dart';
-import 'package:webapp/view/home/widget/body/body_tablet.dart';
+import 'package:webapp/view/widget/body/body_desktop.dart';
+import 'package:webapp/view/widget/body/body_mobile.dart';
+import 'package:webapp/view/widget/body/body_tablet.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
