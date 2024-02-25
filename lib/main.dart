@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:webapp/view/home/home.dart';
+import 'package:webapp/view/utils/init_classes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'web app',
+    Init().initClasses();
+    return GetMaterialApp(
+      title: 'portfolio',
       theme: ThemeData(
         focusColor: Colors.black,
         fontFamily: GoogleFonts.raleway().fontFamily,

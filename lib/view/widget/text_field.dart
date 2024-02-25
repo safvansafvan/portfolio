@@ -8,21 +8,20 @@ class TextFieldCommon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 50,
-      decoration: BoxDecoration(
-          color: Colors.grey.withAlpha(300),
-          borderRadius: BorderRadius.circular(20)),
-      child: Center(
-        child: TextFormField(
-          decoration: InputDecoration(
-              prefixIcon: Icon(prefix),
-              hintText: label,
-              enabledBorder: InputBorder.none,
-              disabledBorder: InputBorder.none,
-              focusedBorder: InputBorder.none),
-        ),
-      ),
+    return TextField(
+      decoration: InputDecoration(
+          prefixIcon: Icon(prefix),
+          hintText: label,
+          fillColor: Colors.grey.withAlpha(300),
+          filled: true,
+          focusedErrorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(color: Colors.grey.withAlpha(300))),
+          enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(color: Colors.grey.withAlpha(300))),
+          disabledBorder: InputBorder.none,
+          errorBorder: InputBorder.none),
     );
   }
 }
