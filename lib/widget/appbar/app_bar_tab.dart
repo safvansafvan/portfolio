@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:webapp/view/utils/home_top_buttons.dart';
+import 'package:webapp/utils/home_top_buttons.dart';
 
 class AppBarTab extends StatelessWidget {
   const AppBarTab({super.key});

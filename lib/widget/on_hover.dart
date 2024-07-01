@@ -9,7 +9,7 @@ class OnHoverAnimation extends StatefulWidget {
 
 class _OnHoverAnimationState extends State<OnHoverAnimation> {
   bool isHover = false;
-  final hoverTransform = Matrix4.identity()..scale(1.1);
+  final hoverTransform = Matrix4.identity()..scale(0.9);
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +18,7 @@ class _OnHoverAnimationState extends State<OnHoverAnimation> {
         onEnter: (_) => handleHover(true),
         onExit: (_) => handleHover(false),
         child: AnimatedContainer(
+            curve: Easing.linear,
             transform: transform,
             duration: const Duration(milliseconds: 400),
             child: widget.child));

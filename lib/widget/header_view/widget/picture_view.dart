@@ -6,11 +6,14 @@ class PictureView extends StatelessWidget {
   final double width;
   @override
   Widget build(BuildContext context) {
-    return Image(
-      image: const AssetImage('assets/img/my_img.png'),
-      height: height,
-      width: width,
-      fit: BoxFit.cover,
+    return Align(
+      alignment: Alignment.bottomCenter,
+      child: Image(
+        image: const AssetImage('assets/img/my_img.png'),
+        height: height,
+        width: width,
+        fit: BoxFit.cover,
+      ),
     );
   }
 }

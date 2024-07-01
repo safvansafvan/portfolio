@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:webapp/view/widget/appbar/app_bar_mobile.dart';
-import 'package:webapp/view/widget/appbar/app_bar_tab.dart';
-import 'package:webapp/view/widget/appbar/app_bar_web.dart';
+import 'package:webapp/widget/appbar/app_bar_mobile.dart';
+import 'package:webapp/widget/appbar/app_bar_tab.dart';
+import 'package:webapp/widget/appbar/app_bar_web.dart';
 
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget({super.key});

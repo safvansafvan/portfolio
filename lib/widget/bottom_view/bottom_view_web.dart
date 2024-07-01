@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:webapp/view/utils/social_buttons.dart';
-import 'package:webapp/view/widget/text_field.dart';
+import 'package:webapp/utils/social_buttons.dart';
+import 'package:webapp/widget/text_field.dart';
 
 class BottomViewWeb extends StatelessWidget {
   const BottomViewWeb({super.key});
@@ -97,14 +97,19 @@ class BottomViewWeb extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 20),
-                  child: SingleChildScrollView(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: socialButtons,
+                Column(
+                  children: [
+                    const Text('Social Media',
+                        style: TextStyle(fontSize: 16, color: Colors.black)),
+                    const SizedBox(height: 20),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: socialButtons,
+                      ),
                     ),
-                  ),
+                  ],
                 )
               ],
             ),

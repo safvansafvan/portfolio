@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:webapp/view/home/widget/app_bar_widget.dart';
-import 'package:webapp/view/home/widget/body.dart';
-import 'package:webapp/view/home/widget/bottom_view.dart';
-import 'package:webapp/view/utils/home_top_buttons.dart';
+import 'package:webapp/view/home/widget/header_view.dart';
+import 'package:webapp/utils/home_top_buttons.dart';
+import 'package:webapp/widget/about_me/about_me_web.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -18,7 +18,8 @@ class HomeView extends StatelessWidget {
             child: AppBarWidget(),
           ),
           Body(),
-          BottomView()
+          AboutMeWidget(),
+          // BottomView()
         ],
       ),
       drawer: Drawer(

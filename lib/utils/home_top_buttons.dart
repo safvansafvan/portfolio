@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../controller/const/const.dart';
+import '../controller/const/const.dart';
 import '../widget/on_hover.dart';
 
 List<Widget> homeButtons = [
@@ -20,10 +20,13 @@ List<Widget> homeButtons = [
           style: bstyle,
           onPressed: () {},
           child: Text('About', style: appBarTitleStyle))),
-  OnHoverAnimation(
-    child: TextButton(
-        onPressed: () {},
-        style: bstyle,
-        child: Text('Contact', style: appBarTitleStyle)),
+  Padding(
+    padding: const EdgeInsets.only(right: 30),
+    child: OnHoverAnimation(
+      child: TextButton(
+          onPressed: () {},
+          style: bstyle,
+          child: Text('Contact', style: appBarTitleStyle)),
+    ),
   ),
 ];
